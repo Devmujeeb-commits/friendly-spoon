@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+
+\title{On the Indeterminacy of \texorpdfstring{$\frac{0}{0}$}{0/0}}
+\author{Group 6 (Abdulmujeeb, John, Isa, Joshua)}
+\date{}
+
+\begin{document}
+
+\section*{Theorem}
+\textit{The expression} \( \frac{0}{0} \) \textit{is undefined because it is indeterminate: it does not correspond to a unique real number.}
+
+\section*{Proof}
+
+Assume, for contradiction, that there exists a real number \( c \in \mathbb{R} \) such that:
+\[
+\frac{0}{0} = c
+\]
+
+By the definition of division, we know:
+\[
+\frac{a}{b} = c \iff a = b \cdot c, \quad \text{provided that } b \neq 0
+\]
+
+Applying this to our assumption:
+\[
+\frac{0}{0} = c \Rightarrow 0 = 0 \cdot c
+\]
+
+However, it is also true that:
+\[
+\forall c \in \mathbb{R},\quad 0 \cdot c = 0
+\]
+
+Hence, the equation \( 0 = 0 \cdot c \) is satisfied by \textbf{every} real number \( c \). That is:
+\[
+\exists c_1, c_2 \in \mathbb{R},\quad c_1 \ne c_2,\quad \text{such that } 0 = 0 \cdot c_1 = 0 \cdot c_2
+\Rightarrow \frac{0}{0} = c_1 \quad \text{and} \quad \frac{0}{0} = c_2
+\]
+
+This contradicts the requirement that the result of division be \textbf{unique}.
+
+\medskip
+
+\noindent Therefore, the assumption that \( \frac{0}{0} \) equals any specific real number leads to contradiction.
+
+\section*{Conclusion}
+
+\[
+\boxed{
+\frac{0}{0} \text{ is undefined because it does not yield a unique real value; it is indeterminate.}
+}
+\]
+
+\end{document}
